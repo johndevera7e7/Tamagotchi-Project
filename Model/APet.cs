@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Tamagotchi.Model
 {
-    abstract class APet
+    public abstract class APet
     {
         internal const string NAME = "Unknown";
         internal const int AGE = 0;
