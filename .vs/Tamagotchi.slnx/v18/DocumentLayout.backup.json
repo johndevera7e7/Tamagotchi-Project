@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\isard\\source\\repos\\Tamagotchi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0D3D6DB0-E791-4184-59C0-CA4FC9F2B0F4}|Tamagotchi.csproj|c:\\users\\isard\\source\\repos\\tamagotchi\\model\\apet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D3D6DB0-E791-4184-59C0-CA4FC9F2B0F4}|Tamagotchi.csproj|solutionrelative:model\\apet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C6DBE3-55EC-4CBC-AF89-62F7F325468E}|Tamagotchi.csproj|c:\\users\\isard\\source\\repos\\tamagotchi\\model\\apet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C6DBE3-55EC-4CBC-AF89-62F7F325468E}|Tamagotchi.csproj|solutionrelative:model\\apet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D3D6DB0-E791-4184-59C0-CA4FC9F2B0F4}|Tamagotchi.csproj|c:\\users\\isard\\source\\repos\\tamagotchi\\model\\ametal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D3D6DB0-E791-4184-59C0-CA4FC9F2B0F4}|Tamagotchi.csproj|solutionrelative:model\\ametal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C6DBE3-55EC-4CBC-AF89-62F7F325468E}|Tamagotchi.csproj|c:\\users\\isard\\source\\repos\\tamagotchi\\model\\ametal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C6DBE3-55EC-4CBC-AF89-62F7F325468E}|Tamagotchi.csproj|solutionrelative:model\\ametal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0D3D6DB0-E791-4184-59C0-CA4FC9F2B0F4}|Tamagotchi.csproj|c:\\users\\isard\\source\\repos\\tamagotchi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0D3D6DB0-E791-4184-59C0-CA4FC9F2B0F4}|Tamagotchi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15C6DBE3-55EC-4CBC-AF89-62F7F325468E}|Tamagotchi.csproj|c:\\users\\isard\\source\\repos\\tamagotchi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C6DBE3-55EC-4CBC-AF89-62F7F325468E}|Tamagotchi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,8 @@
               "RelativeToolTip": "Model\\AMetal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T09:31:00.739Z"
+              "WhenOpened": "2026-02-26T09:31:00.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "Model\\APet.cs",
               "ToolTip": "C:\\Users\\isard\\source\\repos\\Tamagotchi\\Model\\APet.cs",
               "RelativeToolTip": "Model\\APet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T09:10:09.614Z",
               "EditorCaption": ""
@@ -59,7 +60,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T09:07:43.245Z"
+              "WhenOpened": "2026-02-26T09:07:43.245Z",
+              "EditorCaption": ""
             }
           ]
         },
