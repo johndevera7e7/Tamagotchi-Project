@@ -74,5 +74,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             type = State.Happy;
         }
+
+        public override Stats 
+            
+        
     }
 }
