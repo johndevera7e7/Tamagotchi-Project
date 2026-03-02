@@ -4,19 +4,18 @@ using System.Text;
 
 namespace Tamagotchi.Model
 {
-    public abstract class Stats
+    public class Stats
     {
-        protected const int ENERGY = 100;
-        protected int Energy { get; set; }
-
-        Stats(int energy)
+        protected const int QUANTITY = 100;
+        protected string Name { get; set; }
+        protected int Quantity { get; set; }
+        
+        public Stats(string name)
         {
-            this.Energy = energy;
+            this.Name = name;
+            this.Quantity = QUANTITY;
         }
 
-        Stats()
-        {
-            this.Energy = ENERGY;
-        }
+        
     }
 }
