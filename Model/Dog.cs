@@ -4,22 +4,11 @@ using System.Text;
 
 namespace Tamagotchi.Model
 {
-    public abstract class AOrganic: APet
+    
+    public class Dog: AOrganic
     {
-        protected const string BREED = "Unknown";
-        protected string Breed { get; set; }
-        protected State type { get; set; }
 
-        protected enum State
-        {
-            Happy,
-            Sad,
-            Angry,
-            Tired,
-            Sick
-        }
-
-        public AOrganic (string name, int age, string breed)
+        public Dog(string name, int age, string breed)
         {
             this.Name = name;
             this.Age = age;
@@ -27,7 +16,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(int age, string breed)
+        public Dog(int age, string breed)
         {
             this.Name = NAME;
             this.Age = age;
@@ -35,7 +24,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(string name, string breed)
+        public Dog(string name, string breed)
         {
             this.Name = name;
             this.Age = AGE;
@@ -43,7 +32,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(string name, int age)
+        public Dog(string name, int age)
         {
             this.Name = name;
             this.Age = age;
@@ -51,7 +40,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(int age)
+        public Dog(int age)
         {
             this.Name = NAME;
             this.Age = age;
@@ -59,7 +48,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(string name)
+        public Dog(string name)
         {
             this.Name = name;
             this.Age = AGE;
@@ -67,12 +56,13 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic()
+        public Dog()
         {
             this.Name = NAME;
             this.Age = AGE;
             this.Breed = BREED;
             type = State.Happy;
         }
+
     }
 }
