@@ -67,5 +67,13 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             type = State.Happy;
         }
+
+        public AOrganic()
+        {
+            this.Name = NAME;
+            this.Age = AGE;
+            this.Breed = BREED;
+            type = State.Happy;
+        }
     }
 }
