@@ -4,23 +4,9 @@ using System.Text;
 
 namespace Tamagotchi.Model
 {
-    public abstract class AOrganic: APet
+    public class Cat: AOrganic
     {
-        protected const string BREED = "Unknown";
-        protected string Breed { get; set; }
-
-        protected State type { get; set; }
-
-        protected enum State
-        {
-            Happy,
-            Sad,
-            Angry,
-            Tired,
-            Sick
-        }
-
-        public AOrganic (string name, int age, string breed)
+        public Cat(string name, int age, string breed)
         {
             this.Name = name;
             this.Age = age;
@@ -28,7 +14,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(int age, string breed)
+        public Cat(int age, string breed)
         {
             this.Name = NAME;
             this.Age = age;
@@ -36,7 +22,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(string name, string breed)
+        public Cat(string name, string breed)
         {
             this.Name = name;
             this.Age = AGE;
@@ -44,7 +30,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(string name, int age)
+        public Cat(string name, int age)
         {
             this.Name = name;
             this.Age = age;
@@ -52,7 +38,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(int age)
+        public Cat(int age)
         {
             this.Name = NAME;
             this.Age = age;
@@ -60,7 +46,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic(string name)
+        public Cat(string name)
         {
             this.Name = name;
             this.Age = AGE;
@@ -68,7 +54,7 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
-        public AOrganic()
+        public Cat()
         {
             this.Name = NAME;
             this.Age = AGE;
