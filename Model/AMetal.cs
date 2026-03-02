@@ -7,7 +7,7 @@ namespace Tamagotchi.Model
 {
     public abstract class AMetal: APet
     {
-        const int GENERATION = 1;
+        protected const int GENERATION = 1;
         protected int Generation { get; set; }
         protected Condition type { get; set; }
 
