@@ -8,8 +8,8 @@ namespace Tamagotchi.Model
 {
     public abstract class APet
     {
-        internal const string NAME = "Unknown";
-        internal const int AGE = 0;
+        protected const string NAME = "Unknown";
+        protected const int AGE = 0;
 
         protected string Name { get; set; }
         protected int Age { get; set; }

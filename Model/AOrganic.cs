@@ -6,7 +6,7 @@ namespace Tamagotchi.Model
 {
     public abstract class AOrganic: APet
     {
-        const string BREED = "Unknown";
+        protected const string BREED = "Unknown";
         protected string Breed { get; set; }
 
         protected State type { get; set; }
