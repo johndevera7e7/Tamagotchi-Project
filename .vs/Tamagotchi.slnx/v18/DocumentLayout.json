@@ -32,9 +32,10 @@
               "RelativeDocumentMoniker": "Model\\AMetal.cs",
               "ToolTip": "C:\\Users\\isard\\source\\repos\\Tamagotchi\\Model\\AMetal.cs",
               "RelativeToolTip": "Model\\AMetal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T09:31:00.739Z"
+              "WhenOpened": "2026-03-02T10:47:03.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "Model\\APet.cs",
               "ToolTip": "C:\\Users\\isard\\source\\repos\\Tamagotchi\\Model\\APet.cs",
               "RelativeToolTip": "Model\\APet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T09:10:09.614Z",
               "EditorCaption": ""
@@ -59,7 +60,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T09:07:43.245Z"
+              "WhenOpened": "2026-02-26T09:07:43.245Z",
+              "EditorCaption": ""
             }
           ]
         },
