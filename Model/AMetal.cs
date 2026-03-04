@@ -16,7 +16,8 @@ namespace Tamagotchi.Model
             Perfect,
             Broken,
             Recharging,
-            No_energy
+            No_energy,
+            Rusty
         }
 
         public AMetal(string name, int age, int generation)

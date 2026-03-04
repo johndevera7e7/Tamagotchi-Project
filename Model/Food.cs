@@ -24,7 +24,7 @@ namespace Tamagotchi.Model
             this.Uses = uses;
         }
 
-        public Food( FoodItem fooditem, int uses)
+        public Food(FoodItem fooditem, int uses)
         {
             this.Nutrition = NUTRITION;
             this.FoodItemType = fooditem;
