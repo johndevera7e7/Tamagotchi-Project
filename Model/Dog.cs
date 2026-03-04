@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tamagotchi.Interfaces;
 
 namespace Tamagotchi.Model
 {
@@ -68,5 +69,6 @@ namespace Tamagotchi.Model
         {
             Console.WriteLine($"{this.Name} goes for a walk!");
         }
+
     }
 }

@@ -26,7 +26,7 @@ namespace Tamagotchi.Model
             this.Age = age;
             this.Generation = generation;
             type = Condition.Perfect;
-            Stats Energy = new Stats(name: ENERGY);
+            Stats Energy = new Stats();
         }
 
         public AMetal(int age, int generation)
@@ -35,7 +35,7 @@ namespace Tamagotchi.Model
             this.Age = age;
             this.Generation = generation;
             type = Condition.Perfect;
-            Stats Energy = new Stats(name: ENERGY);
+            Stats Energy = new Stats();
         }
 
         public AMetal(string name, int generation)
@@ -44,7 +44,7 @@ namespace Tamagotchi.Model
             this.Age = AGE;
             this.Generation = generation;
             type = Condition.Perfect;
-            Stats Energy = new Stats(name: ENERGY);
+            Stats Energy = new Stats();
         }
 
         public AMetal(int generation)
@@ -53,7 +53,7 @@ namespace Tamagotchi.Model
             this.Age = AGE;
             this.Generation = generation;
             type = Condition.Perfect;
-            Stats Energy = new Stats(name: ENERGY);
+            Stats Energy = new Stats();
         }
 
         public AMetal()
@@ -62,7 +62,7 @@ namespace Tamagotchi.Model
             this.Age = AGE;
             this.Generation = GENERATION;
             type = Condition.Perfect;
-            Stats Energy = new Stats(name: ENERGY);
+            Stats Energy = new Stats();
         }
     }
 }

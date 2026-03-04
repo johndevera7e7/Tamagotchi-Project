@@ -28,9 +28,9 @@ namespace Tamagotchi.Model
             this.Age = age;
             this.Breed = breed;
             type = State.Happy;
-            Stats Energy = new Stats(name: ENERGY);
-            Stats Health = new Stats(name: HEALTH);
-            Stats Hunger = new Stats(name: HUNGER);
+            Stats Energy = new Stats();
+            Stats Health = new Stats();
+            Stats Hunger = new Stats();
         }
 
         public AOrganic(int age, string breed)
@@ -39,9 +39,9 @@ namespace Tamagotchi.Model
             this.Age = age;
             this.Breed = breed;
             type = State.Happy;
-            Stats Energy = new Stats(name: ENERGY);
-            Stats Health = new Stats(name: HEALTH);
-            Stats Hunger = new Stats(name: HUNGER);
+            Stats Energy = new Stats();
+            Stats Health = new Stats();
+            Stats Hunger = new Stats();
         }
 
         public AOrganic(string name, string breed)
@@ -50,9 +50,9 @@ namespace Tamagotchi.Model
             this.Age = AGE;
             this.Breed = breed;
             type = State.Happy;
-            Stats Energy = new Stats(name: ENERGY);
-            Stats Health = new Stats(name: HEALTH);
-            Stats Hunger = new Stats(name: HUNGER);
+            Stats Energy = new Stats();
+            Stats Health = new Stats();
+            Stats Hunger = new Stats();
         }
 
         public AOrganic(string name, int age)
@@ -61,9 +61,9 @@ namespace Tamagotchi.Model
             this.Age = age;
             this.Breed = BREED;
             type = State.Happy;
-            Stats Energy = new Stats(name: ENERGY);
-            Stats Health = new Stats(name: HEALTH);
-            Stats Hunger = new Stats(name: HUNGER);
+            Stats Energy = new Stats();
+            Stats Health = new Stats();
+            Stats Hunger = new Stats();
         }
 
         public AOrganic(int age)
@@ -72,9 +72,9 @@ namespace Tamagotchi.Model
             this.Age = age;
             this.Breed = BREED;
             type = State.Happy;
-            Stats Energy = new Stats(name: ENERGY);
-            Stats Health = new Stats(name: HEALTH);
-            Stats Hunger = new Stats(name: HUNGER);
+            Stats Energy = new Stats();
+            Stats Health = new Stats();
+            Stats Hunger = new Stats();
         }
 
         public AOrganic(string name)
@@ -83,9 +83,9 @@ namespace Tamagotchi.Model
             this.Age = AGE;
             this.Breed = BREED;
             type = State.Happy;
-            Stats Energy = new Stats(name: ENERGY);
-            Stats Health = new Stats(name: HEALTH);
-            Stats Hunger = new Stats(name: HUNGER);
+            Stats Energy = new Stats();
+            Stats Health = new Stats();
+            Stats Hunger = new Stats();
         }
 
         public AOrganic()
@@ -94,9 +94,9 @@ namespace Tamagotchi.Model
             this.Age = AGE;
             this.Breed = BREED;
             type = State.Happy;
-            Stats Energy = new Stats(name: ENERGY);
-            Stats Health = new Stats(name: HEALTH);
-            Stats Hunger = new Stats(name: HUNGER);
+            Stats Energy = new Stats();
+            Stats Health = new Stats();
+            Stats Hunger = new Stats();
         }
     }
 }

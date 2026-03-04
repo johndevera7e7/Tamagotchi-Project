@@ -7,12 +7,10 @@ namespace Tamagotchi.Model
     public class Stats
     {
         protected const int QUANTITY = 100;
-        protected string Name { get; set; }
-        protected int Quantity { get; set; }
+        public int Quantity { get; set; }
         
-        public Stats(string name)
+        public Stats()
         {
-            this.Name = name;
             this.Quantity = QUANTITY;
         }
 
