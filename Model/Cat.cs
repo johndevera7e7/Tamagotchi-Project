@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Tamagotchi.Model
@@ -60,6 +61,11 @@ namespace Tamagotchi.Model
             this.Age = AGE;
             this.Breed = BREED;
             type = State.Happy;
+        }
+
+        public void Meow()
+        {
+            Console.WriteLine($"{this.Name} says: MEOW!");
         }
     }
 }

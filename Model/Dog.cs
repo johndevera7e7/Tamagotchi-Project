@@ -64,5 +64,9 @@ namespace Tamagotchi.Model
             type = State.Happy;
         }
 
+        public void Walk()
+        {
+            Console.WriteLine($"{this.Name} goes for a walk!");
+        }
     }
 }

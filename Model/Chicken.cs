@@ -62,5 +62,10 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             type = State.Happy;
         }
+
+        public void Egg()
+        {
+            Console.WriteLine($"{this.Name} laid an egg!");
+        }
     }
 }
