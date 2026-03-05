@@ -7,11 +7,14 @@ namespace Tamagotchi.Model
 {
     public class Cat: AOrganic
     {
+
+        const string petAnimal = "Cat";
         public Cat(string name, int age, string breed)
         {
             this.Name = name;
             this.Age = age;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
         }
 
@@ -20,6 +23,7 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = age;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
         }
 
@@ -28,6 +32,7 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = AGE;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
         }
 
@@ -36,6 +41,7 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = age;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
         }
 
@@ -44,6 +50,7 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = age;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
         }
 
@@ -52,6 +59,7 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = AGE;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
         }
 
@@ -60,6 +68,7 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = AGE;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
         }
 

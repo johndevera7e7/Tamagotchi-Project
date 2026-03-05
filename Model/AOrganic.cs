@@ -12,7 +12,6 @@ namespace Tamagotchi.Model
         protected string Breed { get; set; }
         protected State type { get; set; }
 
-
         protected enum State
         {
             Happy,
@@ -98,5 +97,7 @@ namespace Tamagotchi.Model
             Stats Health = new Stats();
             Stats Hunger = new Stats();
         }
+
+        
     }
 }

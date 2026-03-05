@@ -12,6 +12,7 @@ namespace Tamagotchi.Model
         protected const string NAME = "Unknown";
         protected const int AGE = 0;
 
+        protected virtual string Animal { get; set; }
         protected string Name { get; set; }
         protected int Age { get; set; }
 
@@ -46,6 +47,11 @@ namespace Tamagotchi.Model
         public virtual void Play(Stats energy)
         {
             energy.Quantity = energy.Quantity - 20;
+        }
+
+        public virtual string getAnimal()
+        {
+            return this.Animal;
         }
     }
 }
