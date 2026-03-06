@@ -7,51 +7,56 @@ using Tamagotchi.Interfaces;
 
 namespace Tamagotchi.Model
 {
-    public abstract class APet: Play
+    public abstract class APet: Play, Sleep
     {
         protected const string NAME = "Unknown";
-        protected const int AGE = 0;
+        protected const int AGE = 0, ENERGY = 100;
 
         protected virtual string Animal { get; set; }
         protected string Name { get; set; }
         protected int Age { get; set; }
 
+        protected Stats newStats;
         public APet(string name, int age)
         {
             this.Name = name;
             this.Age = age;
-            Stats Energy = new Stats();
+            newStats = new Stats();
         }
 
         public APet (int age) 
         {
             this.Age = age;
             this.Name = NAME;
-            Stats Energy = new Stats();
+            newStats = new Stats();
         }
 
         public APet(string name)
         {
             this.Age = AGE;
             this.Name = name;
-            Stats Energy = new Stats();
+            newStats = new Stats();
         }
 
         public APet()
         {
             this.Age = AGE;
             this.Name = NAME;
-            Stats Energy = new Stats();
+            newStats = new Stats();
         }
 
-        public virtual void Play(Stats energy)
-        {
-            energy.Quantity = energy.Quantity - 20;
-        }
+        public abstract void Play();
+
+        public abstract void Sleep();
 
         public virtual string getAnimal()
         {
             return this.Animal;
+        }
+
+        public virtual void getStats()
+        {
+            Console.WriteLine($"Energy: {this.newStats.Energy}");
         }
     }
 }

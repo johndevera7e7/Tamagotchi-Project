@@ -16,6 +16,7 @@ namespace Tamagotchi.Model
             this.Generation = generation;
             this.Animal = petAnimal;
             type = Condition.Perfect;
+            newStats = new Stats();
         }
 
         public Drone(int age, int generation)
@@ -25,6 +26,7 @@ namespace Tamagotchi.Model
             this.Generation = generation;
             this.Animal = petAnimal;
             type = Condition.Perfect;
+            newStats = new Stats();
         }
 
         public Drone(string name, int generation)
@@ -34,6 +36,7 @@ namespace Tamagotchi.Model
             this.Generation = generation;
             this.Animal = petAnimal;
             type = Condition.Perfect;
+            newStats = new Stats();
         }
 
         public Drone(int generation)
@@ -43,6 +46,7 @@ namespace Tamagotchi.Model
             this.Generation = generation;
             this.Animal = petAnimal;
             type = Condition.Perfect;
+            newStats = new Stats();
         }
 
         public Drone()
@@ -52,6 +56,7 @@ namespace Tamagotchi.Model
             this.Generation = GENERATION;
             this.Animal = petAnimal;
             type = Condition.Perfect;
+            newStats = new Stats();
         }
     }
 }

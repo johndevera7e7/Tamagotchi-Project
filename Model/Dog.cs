@@ -17,6 +17,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(int age, string breed)
@@ -26,6 +29,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(string name, string breed)
@@ -35,6 +41,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(string name, int age)
@@ -44,6 +53,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(int age)
@@ -53,6 +65,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(string name)
@@ -62,6 +77,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog()
@@ -71,6 +89,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public void Walk()

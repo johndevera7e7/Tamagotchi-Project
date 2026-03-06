@@ -16,6 +16,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Cat(int age, string breed)
@@ -25,6 +28,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Cat(string name, string breed)
@@ -34,6 +40,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Cat(string name, int age)
@@ -43,6 +52,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Cat(int age)
@@ -52,6 +64,7 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
         }
 
         public Cat(string name)
@@ -61,6 +74,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Cat()
@@ -70,6 +86,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public void Meow()

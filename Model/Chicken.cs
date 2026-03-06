@@ -16,6 +16,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(int age, string breed)
@@ -25,6 +28,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(string name, string breed)
@@ -34,6 +40,9 @@ namespace Tamagotchi.Model
             this.Breed = breed;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(string name, int age)
@@ -43,6 +52,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(int age)
@@ -52,6 +64,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(string name)
@@ -61,6 +76,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken() 
@@ -70,6 +88,9 @@ namespace Tamagotchi.Model
             this.Breed = BREED;
             this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public void Egg()
