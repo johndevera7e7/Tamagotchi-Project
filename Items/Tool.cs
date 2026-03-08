@@ -11,7 +11,8 @@ namespace Tamagotchi.Items
         public enum ToolItem
         {
             Oil,
-            Screwdriver
+            Screwdriver,
+            Antidote
         }
 
         public Tool(ToolItem index)
@@ -28,6 +29,11 @@ namespace Tamagotchi.Items
                     this.Uses = 2;
                     this.Name = "Screwdriver";
                     break;
+                case ToolItem.Antidote:
+                    this.ToolItemType = ToolItem.Antidote;
+                    this.Uses = 3;
+                    this.Name = "Antidote";
+                    break;
             }
         }
 
@@ -40,6 +46,11 @@ namespace Tamagotchi.Items
                     break;
                 case ToolItem.Screwdriver:
                     this.Uses = 2;  
+                    break;
+                case ToolItem.Antidote:
+                    this.ToolItemType = ToolItem.Antidote;
+                    this.Uses = 3;
+                    this.Name = "Antidote";
                     break;
             }
         }

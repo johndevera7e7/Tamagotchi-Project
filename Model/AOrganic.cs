@@ -93,7 +93,11 @@ namespace Tamagotchi.Model
 
         public override void Play()
         {
-            if (type == State.Angry)
+            if(type == State.Sick)
+            {
+                Console.WriteLine("{0} is sick! Give it some medicine!");
+            }
+            else if (type == State.Angry)
             {
                 Console.WriteLine("{0} is too angry to play!", this.Name);
             }
@@ -115,7 +119,11 @@ namespace Tamagotchi.Model
 
         public override void Sleep()
         {
-            if (type == State.Angry)
+            if (type == State.Sick)
+            {
+                Console.WriteLine("{0} is sick! Give it some medicine!");
+            }
+            else if (type == State.Angry)
             {
                 Console.WriteLine("{0} is too angry to play!", this.Name);
             }
@@ -124,14 +132,26 @@ namespace Tamagotchi.Model
                 type = State.Happy;
                 this.newStats.Energy = newStats.Energy = 100;
                 this.newStats.Hunger = newStats.Hunger - 20;
-                if (newStats.Hunger <= 50)
+                this.newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+                if (newStats.Health < 20) {
+                    type = State.Sick;
+                }
+                else if (newStats.Hunger <= 50)
                 {
                     type = State.Angry;
                 }
             }
         }
 
-            public void Eat()
+        public void Heal()
+        {
+            this.newStats.Energy = 100;
+            this.newStats.Hunger = 100;
+            this.newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+            type = State.Happy;
+        }
+
+            public override void Eat()
         {
             this.newStats.Hunger = 100;
         }
