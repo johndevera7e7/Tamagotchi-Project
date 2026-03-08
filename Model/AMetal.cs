@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
+using Tamagotchi.Interfaces;
+using Tamagotchi.Items;
 
 namespace Tamagotchi.Model
 {
@@ -9,11 +11,11 @@ namespace Tamagotchi.Model
     {
         protected const int GENERATION = 1;
         protected int Generation { get; set; }
-        protected Condition type { get; set; }
+        public Condition type { get; set; }
 
         Random rnd = new Random();
 
-        protected enum Condition
+        public enum Condition
         {
             Perfect,
             Broken,
@@ -94,6 +96,17 @@ namespace Tamagotchi.Model
                 Console.WriteLine("{0} is now recharged!", this.Name);
                 this.newStats.Energy = 100;
             }
+        }
+
+
+        public override void Fix()
+        {
+            this.type = Condition.Perfect;
+        }
+
+        public override void Grease()
+        {
+            this.type = Condition.Perfect;
         }
     }
 }

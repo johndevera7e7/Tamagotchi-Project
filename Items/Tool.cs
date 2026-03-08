@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace Tamagotchi.Items
@@ -27,7 +28,19 @@ namespace Tamagotchi.Items
                     this.Uses = 2;
                     this.Name = "Screwdriver";
                     break;
-                
+            }
+        }
+
+        public void RechargeTool()
+        {
+            switch (this.ToolItemType)
+            {
+                case ToolItem.Oil:
+                    this.Uses = 4;
+                    break;
+                case ToolItem.Screwdriver:
+                    this.Uses = 2;  
+                    break;
             }
         }
     }

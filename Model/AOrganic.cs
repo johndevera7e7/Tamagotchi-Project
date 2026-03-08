@@ -8,6 +8,7 @@ namespace Tamagotchi.Model
     {
         protected const int HEALTH = 100, HUNGER = 100;
         protected const string BREED = "Unknown";
+        protected const string NotAvailable = "That is not an available option for this pet!";
         protected string Breed { get; set; }
         protected int Hunger { get; set; }
         protected int Health { get; set; }
@@ -128,6 +129,21 @@ namespace Tamagotchi.Model
                     type = State.Angry;
                 }
             }
+        }
+
+            public void Eat()
+        {
+            this.newStats.Hunger = 100;
+        }
+
+        public override void Fix()
+        {
+            Console.WriteLine(NotAvailable);
+        }
+
+        public override void Grease()
+        {
+            Console.WriteLine(NotAvailable);
         }
     }
 }

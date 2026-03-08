@@ -99,5 +99,6 @@ namespace Tamagotchi.Model
             Console.WriteLine($"{this.Name} goes for a walk!");
         }
 
+        
     }
 }

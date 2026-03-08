@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace Tamagotchi.Items
@@ -12,7 +13,8 @@ namespace Tamagotchi.Items
         {
             Meat,
             Seeds,
-            Fruit_Bowl
+            Fruit_Bowl,
+            None
         }
 
         public Food(FoodItem index)
@@ -33,6 +35,29 @@ namespace Tamagotchi.Items
                     this.FoodItemType = FoodItem.Fruit_Bowl;
                     this.Uses = 2;
                     this.Name = "Fruit bowl";
+                    break;
+            }
+        }
+
+        public Food()
+        {
+            this.Nutrition = 0;
+            this.Name = "";
+            this.Uses = 0;
+        }
+
+        public void RechargeFood()
+        {
+            switch (this.FoodItemType)
+            {
+                case FoodItem.Meat:
+                    this.Uses = 3;
+                    break;
+                case FoodItem.Seeds:
+                    this.Uses = 5;
+                    break;
+                case FoodItem.Fruit_Bowl:
+                    this.Uses = 2;
                     break;
             }
         }

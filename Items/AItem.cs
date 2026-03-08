@@ -8,8 +8,8 @@ namespace Tamagotchi.Items
     {
         protected const int USES = 3;
         protected const string NAME = "";
-        protected int Uses { get; set; }
-        protected string Name { get; set; }
+        public int Uses { get; set; }
+        public string Name { get; set; }
 
 
         public AItem(int uses, string name)
