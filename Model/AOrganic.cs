@@ -110,9 +110,16 @@ namespace Tamagotchi.Model
                 Console.WriteLine("You played with {0}!", this.Name);
                 this.newStats.Energy = newStats.Energy - 20;
                 this.newStats.Hunger = newStats.Hunger - 20;
-                if (newStats.Hunger <= 50)
+                this.newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+                if (newStats.Health <= 20)
+                {
+                    type = State.Sick;
+                    Console.WriteLine("{0} is now sick, heal it!", Name);
+                }
+                else if (newStats.Hunger <= 50)
                 {
                     type = State.Angry;
+                    Console.WriteLine("{0} is now angry, feed it!", Name);
                 }
             }
         }
@@ -123,22 +130,19 @@ namespace Tamagotchi.Model
             {
                 Console.WriteLine("{0} is sick! Give it some medicine!");
             }
-            else if (type == State.Angry)
-            {
-                Console.WriteLine("{0} is too angry to play!", this.Name);
-            }
             else
             {
                 type = State.Happy;
-                this.newStats.Energy = newStats.Energy = 100;
-                this.newStats.Hunger = newStats.Hunger - 20;
-                this.newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+                newStats.Energy = newStats.Energy = 100;
+                newStats.Hunger = newStats.Hunger - 20;
+                newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
                 if (newStats.Health < 20) {
                     type = State.Sick;
                 }
                 else if (newStats.Hunger <= 50)
                 {
                     type = State.Angry;
+                    Console.WriteLine("{0} is now angry, feed it!", Name);
                 }
             }
         }
@@ -149,11 +153,24 @@ namespace Tamagotchi.Model
             this.newStats.Hunger = 100;
             this.newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
             type = State.Happy;
+            Console.WriteLine("{0} is now healed!");
         }
 
             public override void Eat()
         {
             this.newStats.Hunger = 100;
+            this.type = State.Happy;
+            newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+            if (newStats.Health <= 20)
+            {
+                type = State.Sick;
+                Console.WriteLine("{0} is now sick, heal it!", Name);
+            }
+            else if (newStats.Energy <= 30)
+            {
+                type = State.Tired;
+                Console.WriteLine("{0} is now tired, let it sleep!", Name);
+            }
         }
 
         public override void Fix()

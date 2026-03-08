@@ -74,15 +74,33 @@ namespace Tamagotchi.Model
             if (newStats.Energy == 0) 
             {
                 Console.WriteLine("{0} has no energy to play!", this.Name);
+            } else if(type == Condition.Broken)
+            {
+                Console.WriteLine("{0} is broken, fix it first!", Name);
             }
             else
             {
                 Console.WriteLine("You played with {0}!", this.Name);
                 this.newStats.Energy = newStats.Energy - 20;
-                if (newStats.Energy == 0)
+                if (rnd.Next(6) == 2)
+                {
+                    if(type == Condition.Rusty)
+                    {
+                        type = Condition.Broken;
+                        Console.WriteLine("{0} is broken! Use a screwdriver to fix it!", Name);
+                    }
+                    else
+                    {
+                        type = Condition.Rusty;
+                        Console.WriteLine("{0} is now rusty, be careful when playing!", Name);
+                    }
+                }
+                else if (newStats.Energy == 0)
                 {
                     type = Condition.No_energy;
+                    Console.WriteLine("{0} has no energy left!", Name);
                 }
+                
             }
         }
 
