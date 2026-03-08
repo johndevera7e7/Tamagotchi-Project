@@ -1,19 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tamagotchi.Interfaces;
 
 namespace Tamagotchi.Model
 {
     
     public class Dog: AOrganic
     {
+        const string petAnimal = "Dog";
 
         public Dog(string name, int age, string breed)
         {
             this.Name = name;
             this.Age = age;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(int age, string breed)
@@ -21,7 +27,11 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = age;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(string name, string breed)
@@ -29,7 +39,11 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = AGE;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(string name, int age)
@@ -37,7 +51,11 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = age;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(int age)
@@ -45,7 +63,11 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = age;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog(string name)
@@ -53,7 +75,11 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = AGE;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Dog()
@@ -61,7 +87,16 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = AGE;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
+        }
+
+        public void Walk()
+        {
+            Console.WriteLine($"{this.Name} goes for a walk!");
         }
 
     }

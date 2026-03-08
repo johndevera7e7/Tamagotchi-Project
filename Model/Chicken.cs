@@ -7,12 +7,18 @@ namespace Tamagotchi.Model
 {
     public class Chicken: AOrganic
     {
+        const string petAnimal = "Chicken";
+
         public Chicken(string name, int age, string breed)
         {
             this.Name = name;
             this.Age = age;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(int age, string breed)
@@ -20,7 +26,11 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = age;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(string name, string breed)
@@ -28,7 +38,11 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = AGE;
             this.Breed = breed;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(string name, int age)
@@ -36,7 +50,11 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = age;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(int age)
@@ -44,7 +62,11 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = age;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken(string name)
@@ -52,7 +74,11 @@ namespace Tamagotchi.Model
             this.Name = name;
             this.Age = AGE;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
         }
 
         public Chicken() 
@@ -60,7 +86,16 @@ namespace Tamagotchi.Model
             this.Name = NAME;
             this.Age = AGE;
             this.Breed = BREED;
+            this.Animal = petAnimal;
             type = State.Happy;
+            newStats = new Stats();
+            
+            
+        }
+
+        public void Egg()
+        {
+            Console.WriteLine($"{this.Name} laid an egg!");
         }
     }
 }
