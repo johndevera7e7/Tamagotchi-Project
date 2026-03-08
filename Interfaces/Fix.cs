@@ -7,5 +7,6 @@ namespace Tamagotchi.Interfaces
     public interface Fix
     {
         void Fix();
+        void Grease();
     }
 }

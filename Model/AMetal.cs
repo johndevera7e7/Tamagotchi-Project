@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
+using Tamagotchi.Interfaces;
+using Tamagotchi.Items;
 
 namespace Tamagotchi.Model
 {
@@ -9,11 +11,11 @@ namespace Tamagotchi.Model
     {
         protected const int GENERATION = 1;
         protected int Generation { get; set; }
-        protected Condition type { get; set; }
+        public Condition type { get; set; }
 
         Random rnd = new Random();
 
-        protected enum Condition
+        public enum Condition
         {
             Perfect,
             Broken,
@@ -72,15 +74,33 @@ namespace Tamagotchi.Model
             if (newStats.Energy == 0) 
             {
                 Console.WriteLine("{0} has no energy to play!", this.Name);
+            } else if(type == Condition.Broken)
+            {
+                Console.WriteLine("{0} is broken, fix it first!", Name);
             }
             else
             {
                 Console.WriteLine("You played with {0}!", this.Name);
                 this.newStats.Energy = newStats.Energy - 20;
-                if (newStats.Energy == 0)
+                if (rnd.Next(6) == 2)
+                {
+                    if(type == Condition.Rusty)
+                    {
+                        type = Condition.Broken;
+                        Console.WriteLine("{0} is broken! Use a screwdriver to fix it!", Name);
+                    }
+                    else
+                    {
+                        type = Condition.Rusty;
+                        Console.WriteLine("{0} is now rusty, be careful when playing!", Name);
+                    }
+                }
+                else if (newStats.Energy == 0)
                 {
                     type = Condition.No_energy;
+                    Console.WriteLine("{0} has no energy left!", Name);
                 }
+                
             }
         }
 
@@ -94,6 +114,17 @@ namespace Tamagotchi.Model
                 Console.WriteLine("{0} is now recharged!", this.Name);
                 this.newStats.Energy = 100;
             }
+        }
+
+
+        public override void Fix()
+        {
+            this.type = Condition.Perfect;
+        }
+
+        public override void Grease()
+        {
+            this.type = Condition.Perfect;
         }
     }
 }

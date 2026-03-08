@@ -8,6 +8,7 @@ namespace Tamagotchi.Model
     {
         protected const int HEALTH = 100, HUNGER = 100;
         protected const string BREED = "Unknown";
+        protected const string NotAvailable = "That is not an available option for this pet!";
         protected string Breed { get; set; }
         protected int Hunger { get; set; }
         protected int Health { get; set; }
@@ -92,7 +93,11 @@ namespace Tamagotchi.Model
 
         public override void Play()
         {
-            if (type == State.Angry)
+            if(type == State.Sick)
+            {
+                Console.WriteLine("{0} is sick! Give it some medicine!");
+            }
+            else if (type == State.Angry)
             {
                 Console.WriteLine("{0} is too angry to play!", this.Name);
             }
@@ -105,29 +110,77 @@ namespace Tamagotchi.Model
                 Console.WriteLine("You played with {0}!", this.Name);
                 this.newStats.Energy = newStats.Energy - 20;
                 this.newStats.Hunger = newStats.Hunger - 20;
-                if (newStats.Hunger <= 50)
+                this.newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+                if (newStats.Health <= 20)
+                {
+                    type = State.Sick;
+                    Console.WriteLine("{0} is now sick, heal it!", Name);
+                }
+                else if (newStats.Hunger <= 50)
                 {
                     type = State.Angry;
+                    Console.WriteLine("{0} is now angry, feed it!", Name);
                 }
             }
         }
 
         public override void Sleep()
         {
-            if (type == State.Angry)
+            if (type == State.Sick)
             {
-                Console.WriteLine("{0} is too angry to play!", this.Name);
+                Console.WriteLine("{0} is sick! Give it some medicine!");
             }
             else
             {
                 type = State.Happy;
-                this.newStats.Energy = newStats.Energy = 100;
-                this.newStats.Hunger = newStats.Hunger - 20;
-                if (newStats.Hunger <= 50)
+                newStats.Energy = newStats.Energy = 100;
+                newStats.Hunger = newStats.Hunger - 20;
+                newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+                if (newStats.Health < 20) {
+                    type = State.Sick;
+                }
+                else if (newStats.Hunger <= 50)
                 {
                     type = State.Angry;
+                    Console.WriteLine("{0} is now angry, feed it!", Name);
                 }
             }
+        }
+
+        public void Heal()
+        {
+            this.newStats.Energy = 100;
+            this.newStats.Hunger = 100;
+            this.newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+            type = State.Happy;
+            Console.WriteLine("{0} is now healed!");
+        }
+
+            public override void Eat()
+        {
+            this.newStats.Hunger = 100;
+            this.type = State.Happy;
+            newStats.Health = (newStats.Energy + newStats.Hunger) / 2;
+            if (newStats.Health <= 20)
+            {
+                type = State.Sick;
+                Console.WriteLine("{0} is now sick, heal it!", Name);
+            }
+            else if (newStats.Energy <= 30)
+            {
+                type = State.Tired;
+                Console.WriteLine("{0} is now tired, let it sleep!", Name);
+            }
+        }
+
+        public override void Fix()
+        {
+            Console.WriteLine(NotAvailable);
+        }
+
+        public override void Grease()
+        {
+            Console.WriteLine(NotAvailable);
         }
     }
 }

@@ -49,6 +49,12 @@ namespace Tamagotchi.Model
 
         public abstract void Sleep();
 
+        public abstract void Eat();
+
+        public abstract void Fix();
+        
+        public abstract void Grease();
+
         public virtual string getAnimal()
         {
             return this.Animal;

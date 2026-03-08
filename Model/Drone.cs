@@ -58,5 +58,10 @@ namespace Tamagotchi.Model
             type = Condition.Perfect;
             newStats = new Stats();
         }
+
+        public override void Eat()
+        {
+            
+        }
     }
 }
